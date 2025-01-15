@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Food Distribution Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="complete-donation-header">
+        <h1>Complete Your Donation</h1>
+    </header>
+    <main class="payment-container">
+        <!-- Donation Summary -->
+        <section class="donation-summary">
+            <h2>Your Donation Details</h2>
+            <p><strong>Donation Type:</strong> <span id="donation-type">Loading...</span></p>
+            <p><strong>Donation Amount:</strong> <span id="donation-amount">Loading...</span></p>
+            <p><strong>Currency:</strong> <span id="donation-currency">Loading...</span></p>
+        </section>
+
+        <!-- Payment Methods -->
+        <section class="payment-methods">
+            <h2>Select Your Payment Method</h2>
+            <div class="payment-options">
+                <button onclick="payNow('Visa')">
+                    <img src="visa.png" alt="Visa" class="payment-logo">
+                </button>
+                <button onclick="payNow('PayPal')">
+                    <img src="paypal.png" alt="PayPal" class="payment-logo">
+                </button>
+                <button onclick="payNow('MasterCard')">
+                    <img src="master.png" alt="MasterCard" class="payment-logo">
+                </button>
+                <button onclick="payNow('Other')">
+                    <img src="bkash.png" alt="Other Payment Methods" class="payment-logo">
+                </button>
+            </div>
+        </section>
+
+        <!-- Motivation Message -->
+        <section class="motivation-message">
+            <img src="mal.jpeg" alt="Children in Need" class="motivation-image">
+            <p>Your generosity is creating hope and bringing smiles to those in need.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Food Distribution Platform. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Extract query parameters from the URL
+        const queryParams = new URLSearchParams(window.location.search);
+        document.getElementById('donation-type').textContent = queryParams.get('type') || 'Unknown';
+        document.getElementById('donation-amount').textContent = queryParams.get('amount') || 'Unknown';
+        document.getElementById('donation-currency').textContent = queryParams.get('currency') || 'Unknown';
+
+        function payNow(method) {
+            alert(`Redirecting to ${method} payment gateway.`);
+            window.location.href = 'payment-confirmation.html';
+        }
+    </script>
+</body>
+</html>

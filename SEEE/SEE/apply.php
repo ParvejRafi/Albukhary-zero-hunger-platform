@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Donation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="donation-description-page">
+    <!-- Header Section -->
+    <header class="custom-header">
+        <div class="logo-and-intro">
+            <div class="logo">
+                <img src="bukhary.png" alt="Zero Hunger Platform Logo">
+                <span>Al Bukhary Zero Hunger Platform</span>
+            </div>
+        </div>
+    </header>
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+        <ul>
+            <li><a href="team.html">About Us</a></li>
+            <li><a href="apply.html">Apply For Donation</a></li>
+            <li><a href="findfood.html">Find Food</a></li>
+           
+            <li><a href="involve.html">Get Involved</a></li>
+            <li><a href="join.html">Join Our Team</a></li>
+            
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Donations for a Hunger-Free World</h1>
+       
+        <img src="apply.png" alt="Apply Icon" class="apply-icon">
+    </section>
+
+    <!-- Key Areas Section -->
+    <section class="key-areas-section">
+        <h2>Our Focus Areas</h2>
+        <div class="focus-areas">
+            <div class="focus-item">
+                <img src="happy.jpeg" alt="Education" class="focus-image">
+                <h3>End Hunger and Ensure Access to Food:</h3>
+                <p>We ensure Ensure that all people, particularly the poor and vulnerable, have access to safe, nutritious, and sufficient food all year round.</p>
+            </div>
+            <div class="focus-item">
+                <img src="sustain.jpeg" alt="Community Well-being" class="focus-image">
+                <h3>Ensure Sustainable Food Systems</h3>
+                <p>Improve food security through sustainable food production systems and resilient agricultural practices</p>
+            </div>
+            <div class="focus-item">
+                <img src="farmar.jpeg" alt="Environment" class="focus-image">
+                <h3>Promote Sustainable Agriculture</h3>
+                <p>Increase agricultural productivity and incomes for small-scale farmers, particularly women, indigenous people, and family farmers..</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Criteria Section -->
+    <section class="eligibility-section">
+        <h2>Eligibility Criteria</h2>
+        <div class="eligibility-box">
+            <p>To apply for a donation, organizations must meet the following criteria:</p>
+            <ul>
+                <li>Be registered with relevant authorities, such as the Registrar of Societies.</li>
+                <li>Operate within Malaysia and actively serve local communities.</li>
+                <li>Submit only one request per calendar year.</li>
+                <li>Demonstrate alignment with Zero Hunger’s mission and focus areas.</li>
+            </ul>
+            <p><strong>Note:</strong> Applications must be submitted via our official platform. Alternative submissions will not be entertained.</p>
+        </div>
+    </section>
+
+    <!-- Application Process Section -->
+    <section class="application-process-section">
+        <h2>How to Apply</h2>
+        <p>Complete the online application form and upload all required documents. Our team will contact you within two weeks if your application is successful.</p>
+        <a href="application.html" class="apply-button">Apply Now</a>
+        <a href="#faq-section" class="faq-button">Read FAQs</a>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faq-section" class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-box">
+            <div class="faq-item">
+                <h3>What happens if my application is approved?</h3>
+                <p class="faq-answer">You will receive a confirmation letter with detailed instructions. Funds are usually disbursed within 2-3 weeks after approval.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I appeal if my application is rejected?</h3>
+                <p class="faq-answer">Yes, you may appeal or resubmit if new supporting evidence is available.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there a maximum amount I can request?</h3>
+                <p class="faq-answer">There is no strict limit; however, all requests are reviewed based on impact and alignment with our goals.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What if my request does not align with the focus areas?</h3>
+                <p class="faq-answer">Applications that do not align with our focus areas will be reviewed after priority applications are processed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <h3>Administrative Office</h3>
+            <address>
+                Al Bukhary international university<br>
+                50088 Alor setar, Malaysia
+            </address>
+            <h3>Email Us</h3>
+            <p>Email: <a href="mailto:info@zerohunger.org">parvejrafi80@gmail.com</a></p>
+            <h3>Call Us</h3>
+            <p>Phone: 1-877-622-3031</p>
+        </div>
+    </section>
+
+   
+
+    <!-- JavaScript for FAQs -->
+    <script>
+        document.querySelectorAll('.faq-item h3').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
